@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root {
+
+    /* sunset theme from color hunt */
+
+    --sunset-yellow: #EBE76C;
+    --sunset-orange: #F0B86E;
+    --sunset-peach: #ED7B7B;
+    --sunset-purple: #836096;
+    
+    /* beach theme from color hunt */
+
+    --beach-purple: #793FDF;
+    --beach-blue: #7091F5;
+    --beach-mint: #97FFF4;
+    --beach-yellow: #FFFD8C;
+
+    /* midnight theme from color hunt */
+
+    --midnight-navy-dark: #313866;
+    --midnight-navy: #504099;
+    --midnight-purple: #974EC3;
+    --midnight-pink: #FE7BE5;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+	background-color: var(--midnight-navy-dark);
+
+} a {
+
+	color: inherit;
+	text-decoration: none;
+
+}
+
+/* parallax handler */ 
+
+.parallax__viewport {
+
+	height: 100vh;
+	overflow-x: hidden;
+	perspective: 300px;
+
+}
+
+
+
+/* this section handles the styling for the nav bar */
+
+nav {
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	padding: 10px 2vh;
+
+	background-color: var(--beach-purple);
+ 
+	font-family: 'Archivo Black', sans-serif;
+
+	border-bottom: 5px solid black;
+
+}
+
+.brand-title {
+
+	width: 400px;
+	height: auto;
+
+}
+
+.links {
+
+	margin-left: 3vh;
+	font-size: 30px;
+	color: #fff;
+
+}
+
+.nav-link:hover {
+
+	color: var(--sunset-peach);
+	text-decoration: underline;
+
+}
+
+.account-actions {
+
+	margin-left: auto;
+
+}
+
+.login {
+
+    color: #fff;
+    font-size: 25px;
+    margin-right: 10px;
+
+} .login:hover {
+
+	color: var(--sunset-orange);
+
+}
+
+.sign-up {
+
+    padding: 9px 25px;
+    background-color: var(--beach-yellow);
+    border: black solid 1px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+	font-family: 'Archivo Black', sans-serif;
+    box-shadow: 5px 5px;
+    font-size: 25px;
+
+    margin-right: 10px;
+
+} .sign-up:hover {
+
+	background-color: var(--sunset-orange);
+	box-shadow: 3px 3px;
+
+}
+
+/* main body of the site */
+
+.hero {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	background-color: var(--sunset-yellow);
+
+
+}
