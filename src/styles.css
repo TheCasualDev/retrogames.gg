@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
@@ -43,17 +44,11 @@ body {
 
 }
 
-/* parallax handler */ 
+/* this handles the scrollbar */
 
-.parallax__viewport {
-
-	height: 100vh;
-	overflow-x: hidden;
-	perspective: 300px;
-
+::-webkit-scrollbar{
+	display: none;
 }
-
-
 
 /* this section handles the styling for the nav bar */
 
@@ -138,11 +133,104 @@ nav {
 .hero {
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	height: 100vh;
-	background-color: var(--sunset-yellow);
+	height: 95vh;
+	background-image: url(./content/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
+} .hero h1 {
+
+	font-family: 'Silkscreen', cursive;
+	font-size: 6em;
+	color: #fff;
+
+} .hero p {
+
+	color: #fff;
+	font-size: 2em;
+	font-family: 'Silkscreen', cursive;
+
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Archivo Black', sans-serif;
+
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+
+	background-image: linear-gradient(
+
+		var(--midnight-navy),
+		var(--midnight-purple)
+
+	);
+
+}
+
+.about-card {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 50vh;
+	padding: 0 4vh;
+
+} .about-card h2 {
+
+	font-size: 4rem;
+	color: #fff;
+
+
+} .about-card p {
+
+	font-size: 20px;
+	color: #fff;
+
+} .about-card button {
+
+	padding: 9px 25px;
+    background-color: var(--beach-yellow);
+    border: black solid 1px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+	font-family: 'Archivo Black', sans-serif;
+    box-shadow: 5px 5px;
+    font-size: 25px;
+
+	margin-top: 10px;
+
+
+}
+
+.left {
+
+	align-items: start;
+
+}
+.right {
+
+	align-items: end;
+
+}
+
+.border {
+
+	
+
+}
+
+/* handle the ending stuff */
+
+.shop {
+
+	height: 100vh;
 
 }
