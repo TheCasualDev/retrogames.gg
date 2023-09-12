@@ -33,6 +33,12 @@
     padding: 0;
 }
 
+html {
+
+	scroll-behavior: smooth;
+
+}
+
 body {
 
 	background-color: var(--midnight-navy-dark);
@@ -41,6 +47,12 @@ body {
 
 	color: inherit;
 	text-decoration: none;
+
+} hr {
+
+	border-top: 3px var(--beach-mint);
+
+	box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--beach-mint), 0 0 40px var(--beach-mint), 0 0 50px var(--beach-mint), 0 0 60px var(--beach-mint), 0 0 70px var(--beach-mint);
 
 }
 
@@ -58,7 +70,7 @@ nav {
 	justify-content: flex-start;
 	align-items: center;
 
-	padding: 10px 2vh;
+	padding: 10px 4vh;
 
 	background-color: var(--beach-purple);
  
@@ -77,7 +89,6 @@ nav {
 
 .links {
 
-	margin-left: 3vh;
 	font-size: 30px;
 	color: #fff;
 
@@ -104,7 +115,7 @@ nav {
 
 } .login:hover {
 
-	color: var(--sunset-orange);
+	color: var(--beach-mint);
 
 }
 
@@ -123,8 +134,9 @@ nav {
 
 } .sign-up:hover {
 
-	background-color: var(--sunset-orange);
+	background-color: var(--beach-mint);
 	box-shadow: 3px 3px;
+	cursor: pointer;
 
 }
 
@@ -158,6 +170,7 @@ nav {
 }
 
 .about {
+	
 	display: flex;
 	flex-direction: column;
 	font-family: 'Archivo Black', sans-serif;
@@ -165,12 +178,7 @@ nav {
 	border-top: 5px solid black;
 	border-bottom: 5px solid black;
 
-	background-image: linear-gradient(
-
-		var(--midnight-navy),
-		var(--midnight-purple)
-
-	);
+	background-color: var(--beach-purple);
 
 }
 
@@ -179,20 +187,23 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex-wrap: wrap;
 
 	height: 50vh;
 	padding: 0 4vh;
 
 } .about-card h2 {
 
+	width: 600px;
 	font-size: 4rem;
 	color: #fff;
 
 
 } .about-card p {
 
-	font-size: 20px;
+	font-size: 22px;
 	color: #fff;
+	width: 600px;
 
 } .about-card button {
 
@@ -208,11 +219,25 @@ nav {
 	margin-top: 10px;
 
 
+} .about-card button:hover {
+
+	background-color: var(--beach-mint);
+	cursor: pointer;
+
 }
 
 .left {
 
 	align-items: start;
+
+	background-image: linear-gradient(
+
+		to right,
+		var(--midnight-navy),
+		var(--midnight-navy),
+		var(--midnight-purple)
+
+	);
 
 }
 .right {
@@ -227,10 +252,165 @@ nav {
 
 }
 
+.iconP:hover {
+
+	color: var(--sunset-peach);
+
+}
+.iconB:hover {
+
+
+	color: var(--beach-blue);
+
+}
+
 /* handle the ending stuff */
 
 .shop {
 
 	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: var(--midnight-navy);
+
+} .shop-title {
+
+	font-size: 4rem;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+
+	color: #fff;
+	font-family: 'Silkscreen', cursive;
+
+}
+
+.buy-cards {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+
+	color: #fff;
+	font-family: 'Archivo Black', sans-serif;
+
+}
+
+.purchase-card {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	color: black;
+	background-color: #fff;
+	margin: 0 10vh;
+	padding: 2vh 0;
+	width: 50vh;
+	height: 55vh;
+
+	border: black solid 3px;
+
+	border-radius: 5%;
+
+}.card-title {
+
+	margin-bottom: 1vh;
+
+}.price {
+
+	padding: 1vh 1vh;
+	background-color: var(--beach-mint);
+	margin-bottom: 2vh;
+	border-radius: 5%;
+	border: black solid 1px;
+
+	box-shadow: 2px 3px;
+
+}
+
+.charge {
+
+	color: var(--sunset-yellow);
+
+}
+
+.buy {
+
+	padding: 9px 25px;
+    border: black solid 1px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+	font-family: 'Archivo Black', sans-serif;
+    box-shadow: 5px 5px;
+    font-size: 25px;
+
+	margin-top: 10px;
+
+} .btn-basic {
+
+	background-color: var(--beach-blue);
+
+} .btn-plus {
+
+	background-color: var(--beach-yellow);
+
+} .btn-basic:hover {
+
+	background-color: var(--midnight-pink);
+	cursor: pointer;
+
+} .btn-plus:hover {
+
+	background-color: var(--midnight-pink);
+	cursor: pointer;
+
+}
+
+.abpit{
+
+	border-top: solid 2px black;
+
+}
+
+.card-list {
+
+	flex: 2;
+
+	list-style-type: none;
+
+	padding: 2vh 2vh;
+
+}
+
+.card-line {
+
+	border-top: 3px black;
+
+}
+
+
+/* CSS for the credits */
+
+
+.credit {
+
+	display: flex;
+	justify-content: center;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+
+	color: #fff;
+	font-family: 'Archivo Black', sans-serif;
+	width: 100%;
+
+}.credits {
+	
+	margin-left: 5px;
+	color: var(--sunset-peach);
 
 }
